@@ -20,10 +20,8 @@ for(( index=0; index<${#results[@]}; index++ ))
 		resultInArray[index]=${results[$index]}
 	done
 }
-
-<<<<<<< HEAD
 storeIntoArray
-=======
+
 function descendingSorting(){
    for (( i=0; i<${#resultInArray[@]}; i++ ))
    do
@@ -38,7 +36,25 @@ function descendingSorting(){
             fi
          done
    done
-echo "Array in descending order => " ${resultInArray[@]}
+echo "Array in descending order = " ${resultInArray[@]}
 }
+
+function ascendingSorting(){
+   for (( i=0; i<${#resultInArray[@]}; i++ ))
+   do
+      temp=0
+      for (( j=0; j<${#resultInArray[@]}; j++ ))
+         do
+            if [[ ${resultInArray[j]%.*} -gt ${resultInArray[i]%.*} ]]
+            then
+               temp=${resultInArray[i]}
+               resultInArray[i]=${resultInArray[j]}
+               resultInArray[j]=$temp
+            fi
+         done
+   done
+echo "Array in ascending order = " ${resultInArray[@]}
+}
+ascendingSorting
 descendingSorting
->>>>>>> UC8-SortDescending
+
