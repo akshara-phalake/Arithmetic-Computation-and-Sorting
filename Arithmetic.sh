@@ -13,14 +13,12 @@ results[compute1]=$compute1
 results[compute2]=$compute2
 results[compute3]=$compute3
 results[compute4]=$compute4
-echo "Results in Dictionary = " ${results[@]}
 
 function storeIntoArray(){
 for(( index=0; index<${#results[@]}; index++ ))
 	do
 		resultInArray[index]=${results[$index]}
 	done
-echo "Results in array = " ${resultInArray[@]}
 }
-storeIntoArray
 
+storeIntoArray
