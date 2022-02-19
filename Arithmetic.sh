@@ -15,12 +15,16 @@ results[3]=$compute3
 results[4]=$compute4
 echo "Dictionary = " ${results[@]}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> UC7-ReadDictionaryValuestoArray
 
 for((k=1; k<5; k++ ))
 do
 	resultInArray[k]=$(( ${results[$k]} ))
 done
 echo "Array = " ${resultInArray[@]}
+<<<<<<< HEAD
 
 function descendingSorting(){
    for (( i=0; i<${#resultInArray[@]}; i++ ))
@@ -60,3 +64,5 @@ descendingSorting
 
 =======
 >>>>>>> UC6-StoreInDictionary
+=======
+>>>>>>> UC7-ReadDictionaryValuestoArray
