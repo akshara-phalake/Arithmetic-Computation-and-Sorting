@@ -9,20 +9,18 @@ compute1=$(($a+$b*$c))
 compute2=$(($a*$b+$c))
 compute3=$(($c+$a/$b))
 compute4=$(($a%$b+$c))
-results[compute1]=$compute1
-results[compute2]=$compute2
-results[compute3]=$compute3
-results[compute4]=$compute4
-echo "Results in Dictionary = " ${results[@]}
+results[1]=$compute1
+results[2]=$compute2
+results[3]=$compute3
+results[4]=$compute4
+echo "Dictionary = " ${results[@]}
 
-function storeIntoArray(){
-for(( index=0; index<${#results[@]}; index++ ))
-	do
-		resultInArray[index]=${results[$index]}
-	done
-echo "Results in array = " ${resultInArray[@]}
-}
-storeIntoArray
+for((k=1; k<5; k++ ))
+do
+	resultInArray[k]=$(( ${results[$k]} ))
+done
+echo "Array = " ${resultInArray[@]}
+#storeIntoArray
 
 function descendingSorting(){
    for (( i=0; i<${#resultInArray[@]}; i++ ))
@@ -38,6 +36,6 @@ function descendingSorting(){
             fi
          done
    done
-echo "Array in descending order => " ${resultInArray[@]}
+echo "Array in descending order = " ${resultInArray[@]}
 }
 descendingSorting
