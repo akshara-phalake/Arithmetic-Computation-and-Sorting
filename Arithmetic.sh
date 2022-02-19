@@ -16,8 +16,11 @@ results[4]=$compute4
 echo "Dictionary = " ${results[@]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> UC7-ReadDictionaryValuestoArray
+=======
+>>>>>>> UC8-SortDescending
 
 for((k=1; k<5; k++ ))
 do
@@ -25,6 +28,10 @@ do
 done
 echo "Array = " ${resultInArray[@]}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#storeIntoArray
+>>>>>>> UC8-SortDescending
 
 function descendingSorting(){
    for (( i=0; i<${#resultInArray[@]}; i++ ))
