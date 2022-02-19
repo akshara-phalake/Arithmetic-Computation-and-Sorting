@@ -20,7 +20,6 @@ do
 	resultInArray[k]=$(( ${results[$k]} ))
 done
 echo "Array = " ${resultInArray[@]}
-#storeIntoArray
 
 function descendingSorting(){
    for (( i=0; i<${#resultInArray[@]}; i++ ))
