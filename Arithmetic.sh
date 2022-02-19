@@ -47,7 +47,7 @@ function descendingSorting(){
             fi
          done
    done
-echo "Array in descending order = " ${resultInArray[@]}
+echo "Array in descending order : " ${resultInArray[@]}
 }
 
 function ascendingSorting(){
@@ -64,12 +64,15 @@ function ascendingSorting(){
             fi
          done
    done
-echo "Array in ascending order = " ${resultInArray[@]}
+echo "Array in ascending order : " ${resultInArray[@]}
 }
 ascendingSorting
 descendingSorting
+<<<<<<< HEAD
 
 =======
 >>>>>>> UC6-StoreInDictionary
 =======
 >>>>>>> UC7-ReadDictionaryValuestoArray
+=======
+>>>>>>> UC9-SortAscending
