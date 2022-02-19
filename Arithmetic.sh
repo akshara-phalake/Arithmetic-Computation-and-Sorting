@@ -14,6 +14,7 @@ results[2]=$compute2
 results[3]=$compute3
 results[4]=$compute4
 echo "Dictionary = " ${results[@]}
+<<<<<<< HEAD
 
 for((k=1; k<5; k++ ))
 do
@@ -57,3 +58,5 @@ echo "Array in ascending order = " ${resultInArray[@]}
 ascendingSorting
 descendingSorting
 
+=======
+>>>>>>> UC6-StoreInDictionary
